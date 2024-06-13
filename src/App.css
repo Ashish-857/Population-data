@@ -1,0 +1,69 @@
+
+/* Populations */
+
+
+* {
+  background-color: bisque;
+}
+
+.App1 th {
+  background-color: rgb(231, 159, 70);
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border: 2px solid blue;
+  margin-top: 10px;
+  
+}
+
+th, td {
+  border: 2px solid #6b39c9;
+  padding: 10px;
+  /* text-align: ; */
+}
+
+button {
+  background-color: rgb(186, 234, 248);
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+button:hover{background-color: rgb(89, 190, 89);
+color: yellow;}
+
+
+
+@media (max-width: 600px) {
+  table {
+    font-size: 14px; 
+  }
+
+  th, td {
+    padding: 5px; 
+  }
+
+  th button {
+    font-size: 0.7rem; 
+  }
+
+  thead th {
+    padding-right: 25px;
+  }
+
+  thead th button {
+    right: 5px; 
+  }
+
+  td:nth-of-type(1)::before { content: "Id"; }
+  td:nth-of-type(2)::before { content: "Country"; }
+  td:nth-of-type(3)::before { content: "Population"; }
+  td:nth-of-type(4)::before { content: "Area (km²)"; }
+  td:nth-of-type(5)::before { content: "Capital"; }
+} 
